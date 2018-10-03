@@ -1,0 +1,346 @@
+<!DOCTYPE html>
+<html lang="en-za">
+<head>
+	<title>Navbar</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="author" content="Jabulani Shili, Orifha Mbedzi, Livhuwani Mvhali,Lindo Mlambo">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!-- <link rel="stylesheet" href="../asserts/bootstrap/css/bootstrap.min.css"> -->
+	<!-- <link rel="stylesheet" href="css/styles.css"> -->
+	<link rel="icon" href="imgs/ico.ico">
+
+	<!-- <script src="../asserts/js/jquery.js"></script>
+    <script src="../asserts/bootstrap/js/bootstrap.min.js"></script> -->
+	<script src="js/javascript.js"></script>
+</head>
+<body>
+<!-- Facebook API -->
+<div id="fb-root"></div>
+<script>
+(function(d, s, id) {
+	var js, fjs = d.getElementsByTagName(s)[0];
+	if (d.getElementById(id)) return;
+	js = d.createElement(s); js.id = id;
+	js.src = 'https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v3.1&appId=169855037030238&autoLogAppEvents=1';
+	fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));
+</script>
+
+<div class="container-fluid">
+<section class="row hidden-xs" id="banner">
+	<div class="container logo-div">
+		<div class="hidden-xs col-sm-6 col-md-6 logo-div">
+			<img src="imgs/prop_logo.png" id="logo" class="img-responsive" alt="Tswelopele Day Care">
+		</div>
+		<div class="hidden-xs col-sm-6 col-md-6">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-md-6 text-right" style="border-right: 1px solid #ccc; padding-right: 10px;"><br>
+					<p style="color: #777"><b>Address: </b>15612 Mashaba Street,</p><p style="color: #777">Mamelodi</p>
+				</div>
+				<div class="col-xs-12 col-sm-6 col-md-6 banner-contact text-right"><br>
+					<p class="rightmost-p"><b>Email: </b><a href="mailo:info@tswelopeledaycare.co.za" style="color: #777">info@tswelopele.co.za</a></p>
+					<p class="rightmost-p"><b>Contact: </b><a href="tel: 0743834139" style="color: #777">074 383 4139</a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="row landing-row">
+	<div class="container">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+			<div class="container-fluid" style="padding: 0px">
+				<div class="navbar-header">
+					<a href="#top" class="navbar-brand hidden-sm hidden-md hidden-lg">Tswelopele<span class="hide-xs"> Day Care</span></a>
+					<button class="navbar-toggle" data-toggle="collapse" data-target="#mynav">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="navbar-collapse collapse" style="padding: 0px" id="mynav">
+					<ul class="nav navbar-nav">
+						<li><a href="#top">Home</a></li>
+						<li><a href="#about">About</a></li>
+						<li><a href="gallery.php">Gallery</a></li>
+						<li><a href="#schedule">Schedule</a></li>
+						<li><a href="#pricings">Pricing</a></li>
+						<li><a href="#sponsors">Sponsors</a></li>
+						<li><a href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+	</div>
+</section>
+<section class="row landing-row">
+	<div id="myCarousel" class="carousel slide" data-ride="carousel">
+		<!-- <ol class="carousel-indicators">
+			<li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+			<li data-target="#myCarousel" data-slide-to="1"></li>
+			<li data-target="#myCarousel" data-slide-to="2"></li>
+		</ol> -->
+		<div class="carousel-inner">
+			<div class="item active">
+				<img src="imgs/slide2.jpg" alt="Chicago" style="width:100%;">
+				<div class="landing-content">
+					<h1>Welcome to Tswelopele Day Care!</h1>
+				</div>
+			</div>
+			<!-- <div class="item active">
+				<img src="imgs/slide.jpg" alt="Los Angeles" style="width:100%;">
+			</div> -->
+		</div>
+		<!-- <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+			<span class="glyphicon glyphicon-chevron-left"></span>
+			<span class="sr-only">Previous</span>
+		</a>
+		<a class="right carousel-control" href="#myCarousel" data-slide="next">
+			<span class="glyphicon glyphicon-chevron-right"></span>
+			<span class="sr-only">Next</span>
+		</a> -->
+	</div>
+	<div class="hidden-xs" id="facebook-feed">
+		<button class="btn btn-link btn-lg" id="show-fb">Facebook Feed <i class="fa fa-chevron-circle-up"></i></button>
+		<div class="fb-page" data-href="https://www.facebook.com/Tswelopele-Day-Care-729646957384635/" data-tabs="timeline" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true"><blockquote cite="https://www.facebook.com/Tswelopele-Day-Care-729646957384635/" class="fb-xfbml-parse-ignore"><a href="https://www.facebook.com/Tswelopele-Day-Care-729646957384635/">Tswelopele Day Care</a></blockquote></div>
+	</div>
+</section>
+<section class="row about" id="about">
+	<div class="container">
+		<h1 class="text-center"><i>Why Us?</i></h1>
+		<div class="col-xs-12 col-sm-7 col-md-7">
+			<h4>Welcome to Tswelopele Day Care, We are simply the best!</h4>
+			<p>Little bit intro about Tswelopele Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+
+			<h4>Vision & Mission</h4>
+			<p>Our Vision Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+			<p>Our Mission Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+
+			<h4>Our Values</h4>
+			<p>Our Values Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet Lorem Ipsum dolor sit amet</p>
+
+			<a href="download:http://localhost/tswelopeledaycare.co.za/info.txt" class="btn btn-lg btn-warning">Download Application Form</a>
+			<a href="#pricings" class="btn btn-lg btn-warning btn-sec">View Our Pricings Here</a>
+		</div>
+		<div class="col-xs-12 col-sm-5 col-md-5"></div>
+	</div>
+</section>
+<!-- Add Gallery Section Later -->
+<section class="row schedule" id="schedule">
+	<div class="container">
+		<h1 class="text-center">Our Daily Schedule</h1>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4>Daily activities, facilities Lorem Ipsum Dolor sit amet</h4>
+				<table class="table table-striped table-hover">
+					<tr>
+						<th>Time</th>
+						<th>Activity</th>
+					</tr>
+					<tr>
+						<td><b>07H00 - 07H30</b></td>
+						<td>Arrival/Receiving of kids by staff</td>
+					</tr>
+					<tr>
+						<td><b>07H30 - 08H00</b></td>
+						<td>Prayer</td>
+					</tr>
+					<tr>
+						<td><b>08H00 - 09H00</b></td>
+						<td>Register/Attendance</td>
+					</tr>
+					<tr>
+						<td><b>09H00 - 09H30</b></td>
+						<td>Breakfast</td>
+					</tr>
+					<tr>
+						<td><b>09H30 - 10H00</b></td>
+						<td>Cleaning of Kids</td>
+					</tr>
+					<tr>
+						<td><b>10H00 - 11H00</b></td>
+						<td>Story Telling</td>
+					</tr>
+					<tr>
+						<td><b>11H00 - 11H45</b></td>
+						<td>Drawing</td>
+					</tr>
+					<tr>
+						<td><b>12H00 - 13H00</b></td>
+						<td>Nap Time</td>
+					</tr>
+					<tr>
+						<td><b>13H00 - 13H30</b></td>
+						<td>Lunch</td>
+					</tr>
+					<tr>
+						<td><b>13H30 - 14H00</b></td>
+						<td>Cleaning and Changing (Kids)</td>
+					</tr>
+					<tr>
+						<td><b>14H00 - 15H00</b></td>
+						<td>Playing With Toys</td>
+					</tr>
+					<tr>
+						<td><b>16H00 - 16H00</b></td>
+						<td>Departure</td>
+					</tr>
+				</table>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="row pricings" id="pricings">
+	<div class="container">
+		<h1 class="text-center">Pricings</h1>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md 12">
+				<h4>Day Care Fees</h4>
+				<p class="header-brief">Fees have to be fully paid by the end of November of each year</p><br>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<ul class="price list-unstyled text-center">
+					<li class="header">0-6 Months</li>
+					<li class="grey">R 650 / Month</li>
+					<!-- <li class="features">More Stuff</li>
+					<li class="features">More Stuff</li>
+					<li class="features">More Stuff</li> -->
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<ul class="price list-unstyled text-center">
+					<li class="header">7-12 Months</li>
+					<li class="grey">R 550 / Month</li>
+					<!-- <li class="features">More Stuff</li>
+					<li class="features">More Stuff</li>
+					<li class="features">More Stuff</li> -->
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<ul class="price list-unstyled text-center">
+					<li class="header">1-2 Years</li>
+					<li class="grey">R 450 / Month</li>
+					<!-- <li class="features">More Stuff</li>
+					<li class="features">More Stuff</li>
+					<li class="features">More Stuff</li> -->
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-3 col-md-3">
+				<ul class="price list-unstyled text-center">
+					<li class="header">3-5 Years</li>
+					<li class="grey">R 350 / Month</li>
+					<!-- <li class="features">More Stuff</li>
+					<li class="features">More Stuff</li>
+					<li class="features">More Stuff</li> -->
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4>Educational Trips and Uniform</h4>
+				<p class="header-brief">We have three educational trips per year, and all these trips are compulsory for all kids.<br>Every child should have a school uniform (This helps identify the children)</p>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<ul class="price list-unstyled text-center">
+					<li class="header">Educational Trips</li>
+					<li class="grey" data-toggle="collapse" data-target=".edu" style="cursor: pointer">R 420 Total <b><i class="fa fa-chevron-circle-down"></i></b></li>
+					<div class="collapse edu">
+						<li class="features">Child Protection Day (R60)</li>
+						<li class="features">Sports Day (R60)</li>
+						<li class="features">Heritage Day (R60)</li>
+						<li class="features">Fun Day (R30)</li>
+						<li class="features">Zoo or Union (R180)</li>
+						<li class="features">Mickey Mouse Hour (R30)</li>
+					</div>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<ul class="price list-unstyled text-center">
+					<li class="header">T-Shirt</li>
+					<li class="grey" data-toggle="collapse" data-target=".edu" style="cursor: pointer">R 150 Each</li>
+				</ul>
+			</div>
+
+			<div class="col-xs-12 col-sm-4 col-md-4">
+				<ul class="price list-unstyled text-center">
+					<li class="header">Tracksuit</li>
+					<li class="grey" data-toggle="collapse" data-target=".edu" style="cursor: pointer">R 350 Each</li>
+				</ul>
+			</div>
+			<div class="col-xs-12 col-sm-12 col-md-12 text-center" style="padding: 0px; margin: 0px">
+				<small class="text-center">* The uniform is paid for in advance before orders are made<br>*Figures in the prices table are subject to change without notice</small>
+			</div>
+		</div>
+	</div>
+</section>
+<section class="row sponsors" id="sponsors">
+	<div class="container">
+		<h1 class="text-center">Sponsors</h1>
+		<div class="row">
+			<div class="col-xs-12 col-sm-12 col-md-12">
+				<h4 class="text-center">Website was built by University of Pretoria Students for the JCP Community Project 2018</h4>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="chip">
+					<img src="imgs/bg1.jpg" class="chip-img img-responsive img-circle">
+					Livhuwani Mvhali
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="chip">
+					<img src="imgs/bg1.jpg" class="chip-img img-responsive img-circle">
+					Orifha Mbedzi
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="chip">
+					<img src="imgs/bg1.jpg" class="chip-img img-responsive img-circle">
+					Jabulani (Mover) Shili
+				</div>
+			</div>
+			<div class="col-xs-12 col-sm-6 col-md-3">
+				<div class="chip">
+					<img src="imgs/bg1.jpg" class="chip-img img-responsive img-circle">
+					Lindo Mlambo
+				</div>
+			</div>
+		</div>
+	</div>
+</section>
+<!-- contact section here -->
+<section class="row contact" id="contact">
+	<div class="container">
+		<h1 class="text-center">Contact Us</h1>
+		<!-- <div class="hidden-xs col-sm-2 col-md-2"></div> -->
+		<div class="col-xs-12 col-sm-7 col-md-7 c-form">
+			<label for="names">Full Names:</label>
+			<input type="text" class="form-control" id="names" placeholder="ex: John Doe"><br>
+			<label for="names">Email:</label>
+			<input type="email" class="form-control" id="email" placeholder="ex: john.doe@gmail.com"><br>
+			<label for="message">Message:</label>
+			<textarea id="message" class="form-control" placeholder="message here..."></textarea>
+		</div>
+	</div>
+</section>
+<footer class="row footer">
+	<div class="container text-center">
+		<!-- <ul class="list-inline list-unstyled">
+			<li><a href="#"><i class="fa fa-facebook-square"></i></a>
+			<li><a href="#"><i class="fa fa-twitter-square"></i></a>
+			<li><a href="#"><i class="fa fa-youtube-square"></i></a>
+		</ul> -->
+		<a href="mailto:info@tswelopeledaycare.co.za">info@tswelopele.co.za</a>
+		<ul class="list-inline">
+			<li><a href="#">University of Pretoria</a></li>
+			<li><a href="#">JCP Community Project</a></li>
+		</ul>
+		<small>Tswelopele Day care &copy; 2018, all rights reserved.</small>
+	</div>
+</footer>
+</div>
+<script>fixNavbar()</script>
+</body>
+</html>
